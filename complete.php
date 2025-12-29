@@ -41,7 +41,7 @@ $tax_rate = 0.08;
 $tax_amount = $subtotal * $tax_rate;
 $grand_total = $subtotal + $tax_amount;
 
-$base_img_url = "http://localhost/nakofi/asset/img/";
+$base_img_url = "<?= BASE_URL ?>asset/img/";
 ?>
 
 <!DOCTYPE html>

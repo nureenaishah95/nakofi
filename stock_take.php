@@ -234,7 +234,7 @@ if (isset($_POST['place_order'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nakofi Cafe - Stock Take</title>
-    <link rel="icon" href="http://localhost/nakofi/asset/img/logo.png" type="image/png">
+    <link rel="icon" href="<?= BASE_URL ?><?= BASE_URL ?>asset/img/logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
@@ -319,7 +319,7 @@ if (isset($_POST['place_order'])) {
 
 <div class="sidebar">
     <div class="logo">
-        <img src="http://localhost/nakofi/asset/img/logo.png" alt="Nakofi Cafe">
+        <img src="<?= BASE_URL ?><?= BASE_URL ?>asset/img/logo.png" alt="Nakofi Cafe">
         <h1>Nakofi Cafe</h1>
     </div>
 
@@ -391,9 +391,9 @@ if (isset($_POST['place_order'])) {
                     $current_count = $draft_counts[$key] ?? 0;
                 ?>
                 <div class="card">
-                    <img src="http://localhost/nakofi/<?= htmlspecialchars($p['image_path']) ?>" 
+                    <img src="<?= BASE_URL ?><?= htmlspecialchars($p['image_path']) ?>" 
                          alt="<?= htmlspecialchars($p['display_name']) ?>"
-                         onerror="this.src='http://localhost/nakofi/asset/img/placeholder.jpg';">
+                         onerror="this.src='<?= BASE_URL ?>asset/img/placeholder.jpg';">
                     <h3><?= strtoupper(htmlspecialchars($p['display_name'])) ?></h3>
                     <div class="target-info">Target Quantity Stock: <strong><?= $p['target_qty'] ?></strong></div>
                     <div class="controls">

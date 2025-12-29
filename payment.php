@@ -89,7 +89,7 @@ unset($data);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nakofi Cafe - Payment</title>
-    <link rel="icon" href="http://localhost/nakofi/asset/img/logo.png" type="image/png">
+    <link rel="icon" href="<?= BASE_URL ?><?= BASE_URL ?>asset/img/logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
@@ -172,7 +172,7 @@ unset($data);
 
 <div class="sidebar">
     <div class="logo">
-        <img src="http://localhost/nakofi/asset/img/logo.png" alt="Nakofi Cafe">
+        <img src="<?= BASE_URL ?><?= BASE_URL ?>asset/img/logo.png" alt="Nakofi Cafe">
         <h1>Nakofi Cafe</h1>
     </div>
     <div class="menu-container">
@@ -268,9 +268,9 @@ unset($data);
     <div class="popup" id="ewalletPopup">
         <h2>E-Wallet Payment</h2>
         <div class="popup-grid">
-            <div class="popup-btn" onclick="confirmAndProceed()"><img src="http://localhost/nakofi/asset/img/tng.avif" alt="TNG"> Touch 'n Go</div>
-            <div class="popup-btn" onclick="confirmAndProceed()"><img src="http://localhost/nakofi/asset/img/grab.jpg" alt="Grab"> GrabPay</div>
-            <div class="popup-btn" onclick="confirmAndProceed()"><img src="http://localhost/nakofi/asset/img/shoppe.png" alt="Shopee"> ShopeePay</div>
+            <div class="popup-btn" onclick="confirmAndProceed()"><img src="<?= BASE_URL ?>asset/img/tng.avif" alt="TNG"> Touch 'n Go</div>
+            <div class="popup-btn" onclick="confirmAndProceed()"><img src="<?= BASE_URL ?>asset/img/grab.jpg" alt="Grab"> GrabPay</div>
+            <div class="popup-btn" onclick="confirmAndProceed()"><img src="<?= BASE_URL ?>asset/img/shoppe.png" alt="Shopee"> ShopeePay</div>
         </div>
         <div class="popup-actions">
             <button class="popup-close" onclick="closePopup('ewallet')">Close</button>
@@ -281,12 +281,12 @@ unset($data);
     <div class="popup" id="bankPopup">
         <h2>Select Your Bank</h2>
         <div class="popup-grid">
-            <div class="popup-btn" onclick="openBank('https://www.maybank2u.com.my')"><img src="http://localhost/nakofi/asset/img/maybank.png" alt="Maybank"> Maybank2u</div>
-            <div class="popup-btn" onclick="openBank('https://www.cimbclicks.com.my')"><img src="http://localhost/nakofi/asset/img/cimb.png" alt="CIMB"> CIMB Clicks</div>
-            <div class="popup-btn" onclick="openBank('https://www.rhbgroup.com')"><img src="http://localhost/nakofi/asset/img/rhb.png" alt="RHB"> RHB Now</div>
-            <div class="popup-btn" onclick="openBank('https://www.hlb.com.my')"><img src="http://localhost/nakofi/asset/img/HLB.jpg" alt="Hong Leong"> Hong Leong</div>
-            <div class="popup-btn" onclick="openBank('https://www.bankislam.biz')"><img src="http://localhost/nakofi/asset/img/bimb.png" alt="Bank Islam"> Bank Islam</div>
-            <div class="popup-btn" onclick="openBank('https://www.bsn.com.my')"><img src="http://localhost/nakofi/asset/img/bsn.jpg" alt="BSN"> BSN Online</div>
+            <div class="popup-btn" onclick="openBank('https://www.maybank2u.com.my')"><img src="<?= BASE_URL ?>asset/img/maybank.png" alt="Maybank"> Maybank2u</div>
+            <div class="popup-btn" onclick="openBank('https://www.cimbclicks.com.my')"><img src="<?= BASE_URL ?>asset/img/cimb.png" alt="CIMB"> CIMB Clicks</div>
+            <div class="popup-btn" onclick="openBank('https://www.rhbgroup.com')"><img src="<?= BASE_URL ?>asset/img/rhb.png" alt="RHB"> RHB Now</div>
+            <div class="popup-btn" onclick="openBank('https://www.hlb.com.my')"><img src="<?= BASE_URL ?>asset/img/HLB.jpg" alt="Hong Leong"> Hong Leong</div>
+            <div class="popup-btn" onclick="openBank('https://www.bankislam.biz')"><img src="<?= BASE_URL ?>asset/img/bimb.png" alt="Bank Islam"> Bank Islam</div>
+            <div class="popup-btn" onclick="openBank('https://www.bsn.com.my')"><img src="<?= BASE_URL ?>asset/img/bsn.jpg" alt="BSN"> BSN Online</div>
         </div>
         <div class="popup-actions">
             <button class="popup-close" onclick="closePopup('bank')">Close</button>

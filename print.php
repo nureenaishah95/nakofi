@@ -74,7 +74,7 @@ if (empty($items)) {
 
 $grand_total = array_sum(array_column($items, 'total'));
 $formatted_date = date('d/m/Y', strtotime($order_date));
-$base_img_url = "http://localhost/nakofi/asset/img/";
+$base_img_url = "<?= BASE_URL ?>asset/img/";
 ?>
 
 <!DOCTYPE html>

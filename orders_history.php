@@ -60,7 +60,7 @@ $estimated_sst = number_format($grand_total_day * 0.08, 2);
 <head>
 <meta charset="UTF-8">
 <title>Orders History - <?= $formatted_date ?> - Nakofi Cafe</title>
-<link rel="icon" href="http://localhost/nakofi/asset/img/logo.png" type="image/png">
+<link rel="icon" href="<?= BASE_URL ?><?= BASE_URL ?>asset/img/logo.png" type="image/png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
@@ -117,7 +117,7 @@ $estimated_sst = number_format($grand_total_day * 0.08, 2);
 <body>
 
 <header>
-    <img src="http://localhost/nakofi/asset/img/logo.png" alt="Logo" class="logo">
+    <img src="<?= BASE_URL ?><?= BASE_URL ?>asset/img/logo.png" alt="Logo" class="logo">
     <h1>Nakofi Cafe</h1>
     <button class="back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button>
 </header>

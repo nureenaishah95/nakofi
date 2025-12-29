@@ -113,7 +113,7 @@ $stmt->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nakofi Cafe - List Orders</title>
-    <link rel="icon" href="http://localhost/nakofi/asset/img/logo.png" type="image/png">
+    <link rel="icon" href="<?= BASE_URL ?><?= BASE_URL ?>asset/img/logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -203,7 +203,7 @@ $stmt->close();
 
 <div class="sidebar">
     <div class="logo">
-        <img src="http://localhost/nakofi/asset/img/logo.png" alt="Nakofi Cafe">
+        <img src="<?= BASE_URL ?><?= BASE_URL ?>asset/img/logo.png" alt="Nakofi Cafe">
         <h1>Nakofi Cafe</h1>
     </div>
     <div class="menu-container">
@@ -397,7 +397,7 @@ $stmt->close();
                 </p>
                 <div class="qr-container">
                     <p><strong>Scan This QR for Refund:</strong></p>
-                    <img src="http://localhost/nakofi/asset/img/qr.jpeg" alt="QR Code">
+                    <img src="<?= BASE_URL ?>asset/img/qr.jpeg" alt="QR Code">
                 </div>
                 <form action="process_no_stock_refund.php" method="POST" enctype="multipart/form-data">
                     <input type="hidden" name="item_id" id="form-item-id">

@@ -66,7 +66,7 @@ $monthly_total = number_format($month_result->fetch_assoc()['month_total'] ?? 0,
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nakofi Cafe - Inventory Audit Reports </title>
-    <link rel="icon" href="http://localhost/nakofi/asset/img/logo.png" type="image/png">
+    <link rel="icon" href="<?= BASE_URL ?><?= BASE_URL ?>asset/img/logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
@@ -149,7 +149,7 @@ $monthly_total = number_format($month_result->fetch_assoc()['month_total'] ?? 0,
 <!-- Sidebar -->
 <div class="sidebar">
     <div class="logo">
-        <img src="http://localhost/nakofi/asset/img/logo.png" alt="Nakofi Cafe">
+        <img src="<?= BASE_URL ?><?= BASE_URL ?>asset/img/logo.png" alt="Nakofi Cafe">
         <h1>Nakofi Cafe</h1>
     </div>
 

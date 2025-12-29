@@ -117,7 +117,7 @@ if ($stmt = $conn->prepare($sql)) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nakofi Cafe - Staff Leader Dashboard</title>
-    <link rel="icon" href="http://localhost/nakofi/asset/img/logo.png" type="image/png">
+    <link rel="icon" href="<?= BASE_URL ?><?= BASE_URL ?>asset/img/logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -314,7 +314,7 @@ if ($stmt = $conn->prepare($sql)) {
 <!-- Sidebar with Scrollable Menu -->
 <div class="sidebar">
     <div class="logo">
-        <img src="http://localhost/nakofi/asset/img/logo.png" alt="Nakofi Cafe">
+        <img src="<?= BASE_URL ?><?= BASE_URL ?>asset/img/logo.png" alt="Nakofi Cafe">
         <h1>Nakofi Cafe</h1>
     </div>
 
@@ -404,9 +404,9 @@ if ($stmt = $conn->prepare($sql)) {
                             <tr>
                                 <td style="padding:12px;"><?php echo htmlspecialchars($product['id']); ?></td>
                                 <td style="padding:12px;">
-                                    <img src="http://localhost/nakofi/<?php echo htmlspecialchars($product['image_path']); ?>" 
+                                    <img src="<?= BASE_URL ?><?php echo htmlspecialchars($product['image_path']); ?>" 
                                          style="width:40px;height:40px;object-fit:cover;border-radius:6px;"
-                                         onerror="this.src='http://localhost/nakofi/asset/img/placeholder.jpg';">
+                                         onerror="this.src='<?= BASE_URL ?>asset/img/placeholder.jpg';">
                                 </td>
                                 <td style="padding:12px;"><?php echo htmlspecialchars($product['product_name']); ?></td>
                                 <td style="padding:12px;color:#6B7280;"><?php echo date('d-m-Y', strtotime($product['created_at'])); ?></td>

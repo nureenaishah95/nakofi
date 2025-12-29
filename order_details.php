@@ -74,7 +74,7 @@ $stmt->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nakofi Cafe - Order #<?php echo $orders_id; ?></title>
-    <link rel="icon" href="http://localhost/nakofi/asset/img/logo.png" type="image/png">
+    <link rel="icon" href="<?= BASE_URL ?><?= BASE_URL ?>asset/img/logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto+Mono&display=swap" rel="stylesheet">
     <style>
@@ -353,7 +353,7 @@ $stmt->close();
 <!-- Sidebar -->
 <div class="sidebar">
     <div class="logo">
-        <img src="http://localhost/nakofi/asset/img/logo.png" alt="Nakofi Cafe">
+        <img src="<?= BASE_URL ?><?= BASE_URL ?>asset/img/logo.png" alt="Nakofi Cafe">
         <h1>Nakofi Cafe</h1>
     </div>
     <div class="menu-container">
@@ -385,7 +385,7 @@ $stmt->close();
         <div class="receipt-preview">
             <div class="receipt">
                 <div class="receipt-header">
-                    <img src="http://localhost/nakofi/asset/img/logo.png" alt="Nakofi Cafe">
+                    <img src="<?= BASE_URL ?><?= BASE_URL ?>asset/img/logo.png" alt="Nakofi Cafe">
                     <h1>Nakofi Cafe</h1>
                     <p>Kampung Bukit Changgang, 42700 Banting Selangor</p>
                     <p>Tel: 03-1234 5678</p>
@@ -446,7 +446,7 @@ $stmt->close();
 <!-- Printable Receipt (Smaller version) -->
 <div class="receipt" id="printable-receipt">
     <div class="receipt-header">
-        <img src="http://localhost/nakofi/asset/img/logo.png" alt="Nakofi Cafe">
+        <img src="<?= BASE_URL ?><?= BASE_URL ?>asset/img/logo.png" alt="Nakofi Cafe">
         <h1>Nakofi Cafe</h1>
         <p>Kampung Bukit Changgang, 42700 Banting Selangor</p>
         <p>Tel: 03-1234 5678</p>

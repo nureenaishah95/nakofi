@@ -73,7 +73,7 @@ if ($selected_date) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nakofi Cafe</title>
-    <link rel="icon" href="http://localhost/nakofi/asset/img/logo.png" type="image/png">
+    <link rel="icon" href="<?= BASE_URL ?><?= BASE_URL ?>asset/img/logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <style>
@@ -248,7 +248,7 @@ if ($selected_date) {
                     $item = $order['item_name'];
                     if ($stock[$item]['count'] < $reorder_thresholds[$item]) {
                         echo "<tr>";
-                        echo "<td><img src='http://localhost/nakofi/asset/img/" . $stock[$item]['image'] . "' alt='" . ucfirst($item) . "'>" . ucfirst($item) . "</td>";
+                        echo "<td><img src='<?= BASE_URL ?>asset/img/" . $stock[$item]['image'] . "' alt='" . ucfirst($item) . "'>" . ucfirst($item) . "</td>";
                         echo "<td>" . $order['quantity'] . "</td>";
                         echo "<td>RM " . number_format($order['total'], 2) . "</td>";
                         echo "</tr>";

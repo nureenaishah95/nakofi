@@ -86,13 +86,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>styles.css">
     
     <!-- Playfair Display -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 
     <title>Nakofi Cafe</title>
-    <link rel="icon" href="http://localhost/nakofi/asset/img/logo.png" type="image/png">
+    <link rel="icon" href="<?= BASE_URL ?><?= BASE_URL ?>asset/img/logo.png" type="image/png">
 
     <style>
         body, p, label, input, button, .form-control, .btn, .modal-title, .form-label, .text-primary {
@@ -171,7 +171,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="d-none d-lg-block col-lg-6 col-xl-6 p-5">
                 <div class="row align-items-center justify-content-center h-100">
                     <div class="col text-center">
-                        <img src="http://localhost/nakofi/asset/img/logo.png" class="bounce right-image" alt="Nakofi Cafe Logo">
+                        <img src="<?= BASE_URL ?><?= BASE_URL ?>asset/img/logo.png" class="bounce right-image" alt="Nakofi Cafe Logo">
                     </div>
                 </div>
             </div>

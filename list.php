@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nakofi Cafe</title>
-    <link rel="icon" href="http://localhost/nakofi/asset/img/logo.png" type="image/png">
+    <link rel="icon" href="<?= BASE_URL ?><?= BASE_URL ?>asset/img/logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <style>
@@ -171,17 +171,17 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><img src="http://localhost/nakofi/asset/img/syrup.jpg" alt="Syrup">Syrup</td>
+                    <td><img src="<?= BASE_URL ?>asset/img/syrup.jpg" alt="Syrup">Syrup</td>
                     <td>3</td>
                     <td>RM 39.90</td>
                 </tr>
                 <tr>
-                    <td><img src="http://localhost/nakofi/asset/img/coffee.jpg" alt="Coffee Bean">Coffee Bean</td>
+                    <td><img src="<?= BASE_URL ?>asset/img/coffee.jpg" alt="Coffee Bean">Coffee Bean</td>
                     <td>5</td>
                     <td>RM 68.70</td>
                 </tr>
                 <tr>
-                    <td><img src="http://localhost/nakofi/asset/img/milk.jpg" alt="Milk">Milk</td>
+                    <td><img src="<?= BASE_URL ?>asset/img/milk.jpg" alt="Milk">Milk</td>
                     <td>4</td>
                     <td>RM 277.00</td>
                 </tr>
@@ -226,17 +226,17 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><img src="http://localhost/nakofi/asset/img/syrup.jpg" alt="Syrup">Syrup</td>
+                                    <td><img src="<?= BASE_URL ?>asset/img/syrup.jpg" alt="Syrup">Syrup</td>
                                     <td>3</td>
                                     <td>RM 39.90</td>
                                 </tr>
                                 <tr>
-                                    <td><img src="http://localhost/nakofi/asset/img/coffee.jpg" alt="Coffee Bean">Coffee Bean</td>
+                                    <td><img src="<?= BASE_URL ?>asset/img/coffee.jpg" alt="Coffee Bean">Coffee Bean</td>
                                     <td>5</td>
                                     <td>RM 68.70</td>
                                 </tr>
                                 <tr>
-                                    <td><img src="http://localhost/nakofi/asset/img/milk.jpg" alt="Milk">Milk</td>
+                                    <td><img src="<?= BASE_URL ?>asset/img/milk.jpg" alt="Milk">Milk</td>
                                     <td>4</td>
                                     <td>RM 277.00</td>
                                 </tr>
