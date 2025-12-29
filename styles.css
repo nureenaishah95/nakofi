@@ -1,0 +1,10 @@
+.fs-7 {
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}

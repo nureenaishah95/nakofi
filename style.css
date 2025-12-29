@@ -1,0 +1,200 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color:rgb(255, 255, 255);
+            color: #343a40;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .header {
+            background-color:  #212529;
+            padding: 15px 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .header h1 {
+            font-size: 35px;
+            font-style: italic;
+            font-family:'Playfair Display',serif;
+            color: #ecf0f1;
+            margin-left: 565px;
+        }
+        .nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav a:hover {
+            color: #3498db;
+        }
+        .logout {
+            background-color:rgba(92, 92, 92, 0.54);
+            color: #fff;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .logout:hover {
+            background-color: #c0392b;
+            transform: translateY(-2px);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 100px auto 20px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            height: 400px;
+        }
+        .dashboard {
+            border: 1px solid #ced4da;
+            padding: 20px;
+            width: 600px;
+            height: 100%;
+            position: relative;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .title {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        .card {
+            border: 1px solid #dee2e6;
+            position: absolute;
+            text-align: center;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+        .staff-profile {
+            width: 200px;
+            height: 200px;
+            top: 50px;
+            left: 50px;
+        }
+        .staff-profile .icon {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .staff-profile p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .stock-take {
+            width: 150px;
+            height: 150px;
+            top: 50px;
+            right: 50px;
+        }
+        .delivery-tracking {
+            width: 150px;
+            height: 150px;
+            top: 220px;
+            right: 50px;
+        }
+        .reporting {
+            width: 150px;
+            height: 150px;
+            top: 50px;
+            right: 220px;
+        }
+        .card i {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #6c757d;
+        }
+        .card p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .card .value {
+            font-weight: 600;
+            color: #343a40;
+        }
+        .loading {
+            opacity: 0.7;
+            pointer-events: none;
+        }
+        .loading::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #3498db;
+            border-top: 3px solid transparent;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        @keyframes spin {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+        .footer {
+            background-color: #212529;;
+            padding: 10px 20px;
+            text-align: center;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: #ecf0f1;
+            font-size: 12px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                margin-top: 120px;
+            }
+            .dashboard {
+                width: 90%;
+                height: auto;
+            }
+            .card {
+                position: static;
+                width: 45%;
+                margin: 10px 0;
+            }
+            .staff-profile {
+                width: 100%;
+                height: auto;
+            }
+            .stock-take, .delivery-tracking, .reporting {
+                width: 100%;
+                height: auto;
+            }
+        }
